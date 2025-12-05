@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ali Kilic — Mechanical Engineer </title>
+  <meta name="description" content="Ali Kilic — PhD student in Mechanical Engineering. Research in legged locomotion, actuators, and fall prevention. Projects, publications, and contact." />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* --------------------------
+       Minimal + Professional CSS
+       Single-file for easy editing
+       -------------------------- */
+    :root{
+      --bg: #ffffff;
+      --text: #0b0b0b;
+      --muted: #5a6370;
+      --accent: #0b5fff;
+      --card: #f7f8fa;
+      --shadow: 0 6px 20px rgba(11,11,11,0.06);
+      --radius: 12px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      font-size:16px;
+    }
+    .container{
+      max-width:1000px;
+      margin:36px auto;
+      padding:24px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .logo{
+      width:56px;height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#eef6ff,#e9f3ff);
+      display:flex;align-items:center;justify-content:center;
+      font-size:22px;box-shadow:var(--shadow);
+    }
+    .name{
+      line-height:1;
+    }
+    .name h1{margin:0;font-size:18px;font-weight:700}
+    .name p{margin:0;font-size:13px;color:var(--muted)}
+
+    nav { display:flex; gap:12px; align-items:center; }
+    .nav-link{
+      text-decoration:none;color:var(--muted);font-size:14px;padding:8px 10px;border-radius:8px;
+    }
+    .nav-link:hover{color:var(--text);background:rgba(11,95,255,0.06)}
+
+    /* Hero */
+    .hello{
+      display:grid;
+      grid-template-columns: 1fr 300px;
+      gap:24px;
+      align-items:start;
+    }
+    @media (max-width:880px){ .hero{grid-template-columns:1fr} }
+
+    .card{
+      background:var(--card);
+      padding:22px;border-radius:var(--radius);box-shadow:var(--shadow);
+    }
+    .intro h2{margin:0 0 8px 0;font-size:22px}
+    .intro p{margin:0;color:var(--muted)}
+
+    .stats{
+      display:flex;gap:12px;margin-top:16px;
+    }
+    .stat{
+      background:white;padding:10px;border-radius:10px;min-width:86px;text-align:center;
+      border:1px solid #eef2f5;
+    }
+    .stat b{display:block;font-size:18px}
+    .stat span{font-size:12px;color:var(--muted)}
+
+    /* Projects / Research sections */
+    section{margin-top:22px}
+    h3{margin:0 0 12px 0;font-size:16px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+    @media (max-width:720px){ .grid{grid-template-columns:1fr} }
+
+    .project{
+      background:white;padding:16px;border-radius:10px;border:1px solid #f0f3f6;
+    }
+    .project h4{margin:0 0 8px 0;font-size:15px}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .badge{font-size:12px;padding:6px 8px;border-radius:999px;border:1px solid #e6eefc;color:var(--accent);background:#f3f8ff}
+
+    /* Publications list */
+    .pubs{display:flex;flex-direction:column;gap:10px}
+    .pub{background:white;padding:12px;border-radius:8px;border:1px solid #f0f3f6}
+
+    /* Contact / footer */
+    footer{margin-top:28px;padding:18px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#fbfcfe);border:1px solid #eef2f6;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .contact-links a{display:inline-block;margin-right:10px;text-decoration:none;color:var(--muted);font-size:14px}
+    .cta-btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;
+      box-shadow:0 6px 18px rgba(11,95,255,0.12)
+    }
+
+    /* small utilities */
+    .muted{color:var(--muted);font-size:14px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;font-size:13px}
+    a.inline-link{color:var(--accent);text-decoration:none}
+    .profile-photo{width:100%;border-radius:8px;object-fit:cover;height:100%}
+    .cv-btn{display:inline-block;margin-top:12px;padding:8px 10px;border-radius:8px;border:1px solid #e6eefc;text-decoration:none;color:var(--accent);font-weight:600}
+  </style>
+</head>
+<body>
+  <main class="container" id="top">
+    <header>
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="logo" aria-hidden="true">AUK</div>
+        <div class="name">
+          <h1>Ali Umut Kilic</h1>
+          <p>PhD Candidate — Mechanical Engineering</p>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#projects">Professional Projects</a>
+        <a class="nav-link" href="#personal-projects">Personal Projects</a>
+      </nav>
+    </header>
+
+    <!-- HELLO -->
+<section class="hello">
+  <div class="card intro" id="about" aria-labelledby="about-heading" style="width:100%;">
+    <h2 id="about-heading">Hello — I’m Ali</h2>
+    <p class="muted">I’m a PhD candidate in Mechanical Engineering at Vanderbilt University researching dynamics of legged locomotion, optimal elastic actuator design, and fall prevention. I build control systems, embedded hardware, and simulation tools related to these subjects!</p>
+  </div>
+</section>
+
+
+
+      </aside>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" aria-labelledby="pubs-heading">
+      <h3 id="pubs-heading">Publications & manuscripts</h3>
+      <div class="pubs">
+        <article class="pub">
+          <strong>Energy Minimization using Custom-Designed Magnetic-Spring Actuators</strong>
+          <div class="muted">Conference Paper — embedded C++ code, simulation codes, and paper figures can be found <a class="inline-link" href="https://github.com/aliumutkilic/IROS-2024-AliKilic" target="_blank" rel="noopener">here</a></div>
+        </article>
+
+        <article class="pub">
+          <strong>A Novel Approximation for the Spring Loaded Inverted Pendulum Model of Locomotion</strong>
+          <div class="muted">Conference paper — animation video, simulation codes, and paper figures can be found <a class="inline-link" href="https://github.com/aliumutkilic/IROS-2023-AliKilic" target="_blank" rel="noopener">here</a></div>
+        </article>
+
+        <article class="pub">
+          <strong>A Novel Approximation for the 3D Spring Loaded Inverted Pendulum Model of Locomotion</strong>
+          <div class="muted">Journal Paper — under review (RAL)</div>
+        </article>
+
+        <article class="pub">
+          <strong>Designing High Energy Density Springs for Compliant Robots</strong>
+          <div class="muted">Journal Paper — under review (RAL) - Designed and manufactured the highest mass-energy density torsional springs in the literature</div>
+  <div class="image-gallery" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <img src="images/spring1.jpg" alt="Spring design 1" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+    <img src="images/spring2.jpg" alt="Spring design 2" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+    <img src="images/spring3.jpg" alt="Spring design 2" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+  </div>
+</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h3 id="projects-heading">Professional projects</h3>
+      <div class="pubs">
+        <article class="pub">
+        <strong>VADL – NASA SLI Competition</strong>
+        <div class="muted">Second place award</div>
+
+        <div style="margin-top:12px;">
+            <!-- Embedded YouTube video -->
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; box-shadow:var(--shadow);">
+            <iframe 
+                src="https://www.youtube.com/embed/S9DU1BfnYMU" 
+                title="VADL NASA SLI Competition — Video" 
+                style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </div>
+        </div>
+        </article>
+        <article class="pub">
+          <strong>Energetics Laboratory Teaching</strong>
+          <div class="muted">Experiments co-designed, conducted, and graded by me. Simulations, raw and processed experimental data are available <a class="inline-link" href="https://github.com/aliumutkilic/Energetics-Laboratory-Teaching" target="_blank" rel="noopener">here</a></div>
+        </article>
+
+        <article class="pub">
+          <strong>Wheeled Fall-Prevention Robot</strong>
+          <div class="muted">Publication in preparation. Sample photos of the concept along with the PCB and mechanical designs shown below. Embedded control code is available <a class="inline-link" href="https://github.com/aliumutkilic/Balancer-Robot" target="_blank" rel="noopener">here</a></div>
+        </article>
+            <div class="image-gallery" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+            <img src="images/fall1.jpg" alt="Spring design 1" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+            <img src="images/fall2.jpg" alt="Spring design 2" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+            <img src="images/fall3.jpg" alt="Spring design 2" style="border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:100%; height:auto;">
+  </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Personal Projects -->
+    <section id="personal-projects" aria-labelledby="personal-projects-heading">
+      <h3 id="personal-projects-heading">Personal projects</h3>
+      <div class="pubs">
+        <article class="pub">
+          <strong>Swiss Style Chess Tournament</strong>
+          <div class="muted">Chess tournament pairing handler designed by me for a local bar tournament. C++ code can be found <a class="inline-link" href="https://github.com/aliumutkilic/Custom-Swiss-Chess" target="_blank" rel="noopener">here</a></div>
+        </article>
+
+        <article class="pub">
+          <strong>Simple Functions</strong>
+          <div class="muted">Implementation of simple functions: moving average, first order and second order filters, and signal blending. Code and example tests can be found <a class="inline-link" href="https://github.com/aliumutkilic/simple-functions" target="_blank" rel="noopener">here</a></div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimal footer to support the year JS and provide contact links -->
+  <footer aria-label="Site footer" style="max-width:1000px;margin:24px auto;padding:12px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;background:linear-gradient(180deg,#ffffff,#fbfcfe);padding:12px;border-radius:10px;border:1px solid #eef2f6;">
+      <div class="muted">© <span id="year"></span> Ali Kilic — All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Small JS: set year, smooth scroll, fake contact handler
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Smooth in-page scroll for older browsers fallback
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Fake contact handler that demonstrates behavior. Replace with real backend/Webhook.
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name') && document.getElementById('name').value.trim();
+      const email = document.getElementById('email') && document.getElementById('email').value.trim();
+      const msg = document.getElementById('message') && document.getElementById('message').value.trim();
+      if(!name || !email || !msg){
+        const el = document.getElementById('contact-msg');
+        if(el) el.textContent = 'Please fill out all fields.';
+        return;
+      }
+      // Example: send to an imaginary endpoint; here we just show a success message.
+      const el = document.getElementById('contact-msg');
+      if(el) el.textContent = 'Thanks — message recorded (demo).';
+      if(e.target && typeof e.target.reset === 'function') e.target.reset();
+    }
+
+    // Accessibility: focus outline for keyboard users only
+    (function(){
+      function handleFirstTab(e) {
+        if(e.key === 'Tab'){
+          document.documentElement.classList.add('show-focus');
+          window.removeEventListener('keydown', handleFirstTab);
+        }
+      }
+      window.addEventListener('keydown', handleFirstTab);
+    })();
+  </script>
+</body>
+</html>
